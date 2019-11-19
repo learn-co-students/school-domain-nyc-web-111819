@@ -1,3 +1,5 @@
+require 'pry'
+
 class School
     attr_reader :name, :roster
 
@@ -16,7 +18,8 @@ class School
 
     def sort
         roster.each do |grade, students|
-        students.sort!
+        # students.sort!
+        binding.pry
         end
     end
 end
